@@ -1,0 +1,3 @@
+/Users/austinshu/Projects/Console/ConsoleFirmware/Core/Src/ltdc.c:30:6:MX_LTDC_Init	112	static
+/Users/austinshu/Projects/Console/ConsoleFirmware/Core/Src/ltdc.c:107:6:HAL_LTDC_MspInit	264	static
+/Users/austinshu/Projects/Console/ConsoleFirmware/Core/Src/ltdc.c:235:6:HAL_LTDC_MspDeInit	16	static

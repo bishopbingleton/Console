@@ -1,0 +1,4 @@
+/Users/austinshu/Projects/Console/ConsoleFirmware/Core/Src/main.c:67:5:main	8	static
+/Users/austinshu/Projects/Console/ConsoleFirmware/Core/Src/main.c:117:6:SystemClock_Config	120	static
+/Users/austinshu/Projects/Console/ConsoleFirmware/Core/Src/main.c:181:6:MPU_Config	24	static
+/Users/austinshu/Projects/Console/ConsoleFirmware/Core/Src/main.c:212:6:Error_Handler	4	static

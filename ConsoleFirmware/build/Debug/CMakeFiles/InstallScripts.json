@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/cmake_install.cmake",
+		"/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/cmake/stm32cubemx/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

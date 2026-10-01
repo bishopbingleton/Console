@@ -1,0 +1,3 @@
+/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/CMakeFiles/ConsoleFirmware.dir
+/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/CMakeFiles/edit_cache.dir
+/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/CMakeFiles/rebuild_cache.dir

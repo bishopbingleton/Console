@@ -1,0 +1,6 @@
+/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/CMakeFiles/ConsoleFirmware.dir
+/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/CMakeFiles/edit_cache.dir
+/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/CMakeFiles/rebuild_cache.dir
+/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
+/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

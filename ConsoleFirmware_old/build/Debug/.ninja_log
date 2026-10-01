@@ -1,0 +1,6 @@
+# ninja log v7
+2	23	1790824637238437711	CMakeFiles/ConsoleFirmware.dir/Src/startup_stm32h7a3xx.S.obj	be6a021a211877d4
+2	31	1790824637238281966	CMakeFiles/ConsoleFirmware.dir/Src/main.c.obj	cc01ec49cd8356c2
+2	37	1790824637238109972	CMakeFiles/ConsoleFirmware.dir/Src/sysmem.c.obj	9cf05ecace04f31f
+1	52	1790824637237573491	CMakeFiles/ConsoleFirmware.dir/Src/syscall.c.obj	9facd08029b2d210
+52	73	1790824637288350864	ConsoleFirmware.elf	20e1d83a5bd6f218

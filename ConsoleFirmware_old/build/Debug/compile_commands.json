@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug",
+  "command": "\"/Users/austinshu/Library/Application Support/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc\" -DDEBUG -DRTE_DEVICE_STARTUP_STM32H7XX -I/Users/austinshu/Projects/Console/ConsoleFirmware/Inc -fdata-sections -ffunction-sections -Wl,--gc-sections -Wno-comment -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -mlittle-endian -mthumb -std=gnu11 -fstack-usage -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb -o CMakeFiles/ConsoleFirmware.dir/Src/syscall.c.obj -c /Users/austinshu/Projects/Console/ConsoleFirmware/Src/syscall.c",
+  "file": "/Users/austinshu/Projects/Console/ConsoleFirmware/Src/syscall.c",
+  "output": "/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/CMakeFiles/ConsoleFirmware.dir/Src/syscall.c.obj"
+},
+{
+  "directory": "/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug",
+  "command": "\"/Users/austinshu/Library/Application Support/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc\" -DDEBUG -DRTE_DEVICE_STARTUP_STM32H7XX -I/Users/austinshu/Projects/Console/ConsoleFirmware/Inc -fdata-sections -ffunction-sections -Wl,--gc-sections -Wno-comment -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -mlittle-endian -mthumb -std=gnu11 -fstack-usage -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb -o CMakeFiles/ConsoleFirmware.dir/Src/sysmem.c.obj -c /Users/austinshu/Projects/Console/ConsoleFirmware/Src/sysmem.c",
+  "file": "/Users/austinshu/Projects/Console/ConsoleFirmware/Src/sysmem.c",
+  "output": "/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/CMakeFiles/ConsoleFirmware.dir/Src/sysmem.c.obj"
+},
+{
+  "directory": "/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug",
+  "command": "\"/Users/austinshu/Library/Application Support/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc\" -DDEBUG -DRTE_DEVICE_STARTUP_STM32H7XX -I/Users/austinshu/Projects/Console/ConsoleFirmware/Inc -fdata-sections -ffunction-sections -Wl,--gc-sections -Wno-comment -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -mlittle-endian -mthumb -std=gnu11 -fstack-usage -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb -o CMakeFiles/ConsoleFirmware.dir/Src/main.c.obj -c /Users/austinshu/Projects/Console/ConsoleFirmware/Src/main.c",
+  "file": "/Users/austinshu/Projects/Console/ConsoleFirmware/Src/main.c",
+  "output": "/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/CMakeFiles/ConsoleFirmware.dir/Src/main.c.obj"
+},
+{
+  "directory": "/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug",
+  "command": "\"/Users/austinshu/Library/Application Support/stm32cube/bundles/gnu-tools-for-stm32/14.3.1+st.2/bin/arm-none-eabi-gcc\" -DDEBUG -DRTE_DEVICE_STARTUP_STM32H7XX -I/Users/austinshu/Projects/Console/ConsoleFirmware/Inc -mcpu=cortex-m7 -mfpu=fpv5-d16 -mfloat-abi=hard -mlittle-endian -mthumb -std=gnu11 -fstack-usage -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb -x assembler-with-cpp -MMD -MP -o CMakeFiles/ConsoleFirmware.dir/Src/startup_stm32h7a3xx.S.obj -c /Users/austinshu/Projects/Console/ConsoleFirmware/Src/startup_stm32h7a3xx.S",
+  "file": "/Users/austinshu/Projects/Console/ConsoleFirmware/Src/startup_stm32h7a3xx.S",
+  "output": "/Users/austinshu/Projects/Console/ConsoleFirmware/build/Debug/CMakeFiles/ConsoleFirmware.dir/Src/startup_stm32h7a3xx.S.obj"
+}
+]
