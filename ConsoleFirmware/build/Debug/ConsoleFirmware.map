@@ -1040,6 +1040,8 @@ Discarded input sections
                 0x00000000      0x214 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
  .text.HAL_GPIO_ReadPin
                 0x00000000       0x2e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .text.HAL_GPIO_TogglePin
+                0x00000000       0x32 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
  .text.HAL_GPIO_LockPin
                 0x00000000       0x4e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
  .text.HAL_GPIO_EXTI_IRQHandler
@@ -2226,6 +2228,8 @@ Discarded input sections
                 0x00000000       0x50 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
  .text.HAL_GetTickFreq
                 0x00000000       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .text.HAL_Delay
+                0x00000000       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
  .text.HAL_SuspendTick
                 0x00000000       0x1c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
  .text.HAL_ResumeTick
@@ -4867,6 +4871,48 @@ Discarded input sections
  .text          0x00000000       0x14 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
  .data          0x00000000        0x0 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
  .bss           0x00000000        0x0 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .text          0x00000000        0x0 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .data          0x00000000        0x0 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_macro   0x00000000      0xb08 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_macro   0x00000000       0x8e CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_macro   0x00000000       0x6d CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_macro   0x00000000      0x103 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_macro   0x00000000       0x6a CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_macro   0x00000000      0x1d0 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_macro   0x00000000      0x190 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .group         0x00000000        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .text          0x00000000        0x0 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .data          0x00000000        0x0 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .bss           0x00000000        0x0 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .text.graphics_get_framebuffer
+                0x00000000       0x16 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .text.graphics_clear
+                0x00000000       0x14 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .debug_macro   0x00000000      0xb08 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .debug_macro   0x00000000       0x22 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .debug_macro   0x00000000       0x8e CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .debug_macro   0x00000000       0x6d CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .debug_macro   0x00000000      0x103 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .debug_macro   0x00000000       0x6a CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .debug_macro   0x00000000      0x1d0 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .debug_macro   0x00000000      0x190 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
  .text          0x00000000        0x0 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-exit.o)
  .data          0x00000000        0x0 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-exit.o)
  .bss           0x00000000        0x0 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-exit.o)
@@ -5136,6 +5182,8 @@ LOAD CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
 LOAD CMakeFiles/ConsoleFirmware.dir/Core/Src/sysmem.c.obj
 LOAD CMakeFiles/ConsoleFirmware.dir/Core/Src/syscalls.c.obj
 LOAD CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
+LOAD CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+LOAD CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
 LOAD /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libm.a
 START GROUP
 LOAD /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/libgcc.a
@@ -5160,7 +5208,7 @@ LOAD /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x08000000                g_pfnVectors
                 0x080002ac                        . = ALIGN (0x4)
 
-.text           0x080002ac     0x3fc0
+.text           0x080002ac     0x3f4c
                 0x080002ac                        . = ALIGN (0x4)
  *(.text)
  *(.text*)
@@ -5230,321 +5278,320 @@ LOAD /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  .text.HAL_GPIO_WritePin
                 0x08002ef8       0x30 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
                 0x08002ef8                HAL_GPIO_WritePin
- .text.HAL_GPIO_TogglePin
-                0x08002f28       0x32 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
-                0x08002f28                HAL_GPIO_TogglePin
- *fill*         0x08002f5a        0x2 
  .text.HAL_PWREx_ConfigSupply
-                0x08002f5c       0x74 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
-                0x08002f5c                HAL_PWREx_ConfigSupply
+                0x08002f28       0x74 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+                0x08002f28                HAL_PWREx_ConfigSupply
  .text.HAL_Init
-                0x08002fd0       0x78 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x08002fd0                HAL_Init
+                0x08002f9c       0x78 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x08002f9c                HAL_Init
  .text.HAL_InitTick
-                0x08003048       0x6c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x08003048                HAL_InitTick
+                0x08003014       0x6c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x08003014                HAL_InitTick
  .text.HAL_IncTick
-                0x080030b4       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x080030b4                HAL_IncTick
+                0x08003080       0x24 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x08003080                HAL_IncTick
  .text.HAL_GetTick
-                0x080030d8       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x080030d8                HAL_GetTick
- .text.HAL_Delay
-                0x080030ec       0x48 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
-                0x080030ec                HAL_Delay
+                0x080030a4       0x14 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+                0x080030a4                HAL_GetTick
  .text.HAL_LTDC_Init
-                0x08003134      0x13a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
-                0x08003134                HAL_LTDC_Init
+                0x080030b8      0x13a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+                0x080030b8                HAL_LTDC_Init
  .text.HAL_LTDC_ConfigLayer
-                0x0800326e       0x7c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
-                0x0800326e                HAL_LTDC_ConfigLayer
- *fill*         0x080032ea        0x2 
+                0x080031f2       0x7c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+                0x080031f2                HAL_LTDC_ConfigLayer
+ *fill*         0x0800326e        0x2 
  .text.LTDC_SetConfig
-                0x080032ec      0x2e8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+                0x08003270      0x2e8 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
  .text.HAL_SPI_Init
-                0x080035d4      0x248 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
-                0x080035d4                HAL_SPI_Init
+                0x08003558      0x248 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+                0x08003558                HAL_SPI_Init
  .text.SPI_GetPacketSize
-                0x0800381c       0x34 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
- .text.main     0x08003850       0x34 CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
-                0x08003850                main
+                0x080037a0       0x34 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+ .text.main     0x080037d4       0x24 CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
+                0x080037d4                main
  .text.SystemClock_Config
-                0x08003884       0xec CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
-                0x08003884                SystemClock_Config
+                0x080037f8       0xec CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
+                0x080037f8                SystemClock_Config
  .text.MPU_Config
-                0x08003970       0x58 CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
+                0x080038e4       0x58 CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
  .text.Error_Handler
-                0x080039c8        0xc CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
-                0x080039c8                Error_Handler
+                0x0800393c        0xc CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
+                0x0800393c                Error_Handler
  .text.MX_GPIO_Init
-                0x080039d4      0x120 CMakeFiles/ConsoleFirmware.dir/Core/Src/gpio.c.obj
-                0x080039d4                MX_GPIO_Init
+                0x08003948      0x120 CMakeFiles/ConsoleFirmware.dir/Core/Src/gpio.c.obj
+                0x08003948                MX_GPIO_Init
  .text.MX_LTDC_Init
-                0x08003af4      0x168 CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj
-                0x08003af4                MX_LTDC_Init
+                0x08003a68      0x168 CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj
+                0x08003a68                MX_LTDC_Init
  .text.HAL_LTDC_MspInit
-                0x08003c5c      0x2f4 CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj
-                0x08003c5c                HAL_LTDC_MspInit
+                0x08003bd0      0x2f4 CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj
+                0x08003bd0                HAL_LTDC_MspInit
  .text.MX_SPI1_Init
-                0x08003f50       0xac CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
-                0x08003f50                MX_SPI1_Init
+                0x08003ec4       0xac CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
+                0x08003ec4                MX_SPI1_Init
  .text.HAL_SPI_MspInit
-                0x08003ffc      0x11c CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
-                0x08003ffc                HAL_SPI_MspInit
+                0x08003f70      0x11c CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
+                0x08003f70                HAL_SPI_MspInit
  .text.NMI_Handler
-                0x08004118        0x8 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
-                0x08004118                NMI_Handler
+                0x0800408c        0x8 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
+                0x0800408c                NMI_Handler
  .text.HardFault_Handler
-                0x08004120        0x8 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
-                0x08004120                HardFault_Handler
+                0x08004094        0x8 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
+                0x08004094                HardFault_Handler
  .text.MemManage_Handler
-                0x08004128        0x8 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
-                0x08004128                MemManage_Handler
+                0x0800409c        0x8 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
+                0x0800409c                MemManage_Handler
  .text.BusFault_Handler
-                0x08004130        0x8 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
-                0x08004130                BusFault_Handler
+                0x080040a4        0x8 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
+                0x080040a4                BusFault_Handler
  .text.UsageFault_Handler
-                0x08004138        0x8 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
-                0x08004138                UsageFault_Handler
+                0x080040ac        0x8 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
+                0x080040ac                UsageFault_Handler
  .text.SVC_Handler
-                0x08004140        0xc CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
-                0x08004140                SVC_Handler
+                0x080040b4        0xc CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
+                0x080040b4                SVC_Handler
  .text.DebugMon_Handler
-                0x0800414c        0xc CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
-                0x0800414c                DebugMon_Handler
+                0x080040c0        0xc CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
+                0x080040c0                DebugMon_Handler
  .text.PendSV_Handler
-                0x08004158        0xc CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
-                0x08004158                PendSV_Handler
+                0x080040cc        0xc CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
+                0x080040cc                PendSV_Handler
  .text.SysTick_Handler
-                0x08004164        0xc CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
-                0x08004164                SysTick_Handler
+                0x080040d8        0xc CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
+                0x080040d8                SysTick_Handler
  .text.HAL_MspInit
-                0x08004170       0x34 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
-                0x08004170                HAL_MspInit
+                0x080040e4       0x34 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+                0x080040e4                HAL_MspInit
  .text.Reset_Handler
-                0x080041a4       0x54 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
-                0x080041a4                Reset_Handler
+                0x08004118       0x54 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
+                0x08004118                Reset_Handler
  .text.Default_Handler
-                0x080041f8        0x2 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
-                0x080041f8                BDMA2_Channel4_IRQHandler
-                0x080041f8                EXTI2_IRQHandler
-                0x080041f8                TIM8_CC_IRQHandler
-                0x080041f8                UART8_IRQHandler
-                0x080041f8                BDMA2_Channel1_IRQHandler
-                0x080041f8                SPI4_IRQHandler
-                0x080041f8                BDMA2_Channel0_IRQHandler
-                0x080041f8                TIM1_CC_IRQHandler
-                0x080041f8                DMA2_Stream5_IRQHandler
-                0x080041f8                JPEG_IRQHandler
-                0x080041f8                DMA1_Stream5_IRQHandler
-                0x080041f8                EXTI3_IRQHandler
-                0x080041f8                LPTIM4_IRQHandler
-                0x080041f8                TIM8_TRG_COM_TIM14_IRQHandler
-                0x080041f8                LPTIM2_IRQHandler
-                0x080041f8                DFSDM1_FLT1_IRQHandler
-                0x080041f8                DMAMUX2_OVR_IRQHandler
-                0x080041f8                GFXMMU_IRQHandler
-                0x080041f8                TIM8_UP_TIM13_IRQHandler
-                0x080041f8                I2C3_ER_IRQHandler
-                0x080041f8                DFSDM1_FLT2_IRQHandler
-                0x080041f8                USART10_IRQHandler
-                0x080041f8                MDMA_IRQHandler
-                0x080041f8                LPTIM3_IRQHandler
-                0x080041f8                BDMA2_Channel3_IRQHandler
-                0x080041f8                HSEM1_IRQHandler
-                0x080041f8                EXTI0_IRQHandler
-                0x080041f8                I2C2_EV_IRQHandler
-                0x080041f8                DAC2_IRQHandler
-                0x080041f8                DMA1_Stream2_IRQHandler
-                0x080041f8                FPU_IRQHandler
-                0x080041f8                OTG_HS_WKUP_IRQHandler
-                0x080041f8                FDCAN1_IT1_IRQHandler
-                0x080041f8                LTDC_ER_IRQHandler
-                0x080041f8                DMA2_Stream2_IRQHandler
-                0x080041f8                SPI1_IRQHandler
-                0x080041f8                OCTOSPI1_IRQHandler
-                0x080041f8                TIM6_DAC_IRQHandler
-                0x080041f8                BDMA2_Channel6_IRQHandler
-                0x080041f8                DMA2_Stream3_IRQHandler
-                0x080041f8                OCTOSPI2_IRQHandler
-                0x080041f8                SAI2_IRQHandler
-                0x080041f8                BDMA1_IRQHandler
-                0x080041f8                DFSDM1_FLT3_IRQHandler
-                0x080041f8                USART6_IRQHandler
-                0x080041f8                TIM17_IRQHandler
-                0x080041f8                USART3_IRQHandler
-                0x080041f8                LPTIM5_IRQHandler
-                0x080041f8                UART5_IRQHandler
-                0x080041f8                DMA2_Stream0_IRQHandler
-                0x080041f8                TIM4_IRQHandler
-                0x080041f8                I2C1_EV_IRQHandler
-                0x080041f8                DMA1_Stream6_IRQHandler
-                0x080041f8                DMAMUX1_OVR_IRQHandler
-                0x080041f8                DMA1_Stream1_IRQHandler
-                0x080041f8                TIM16_IRQHandler
-                0x080041f8                UART4_IRQHandler
-                0x080041f8                TIM3_IRQHandler
-                0x080041f8                RCC_IRQHandler
-                0x080041f8                UART9_IRQHandler
-                0x080041f8                TIM8_BRK_TIM12_IRQHandler
-                0x080041f8                TIM1_TRG_COM_IRQHandler
-                0x080041f8                Default_Handler
-                0x080041f8                ECC_IRQHandler
-                0x080041f8                BDMA2_Channel2_IRQHandler
-                0x080041f8                CEC_IRQHandler
-                0x080041f8                EXTI15_10_IRQHandler
-                0x080041f8                DFSDM1_FLT4_IRQHandler
-                0x080041f8                ADC_IRQHandler
-                0x080041f8                DMA1_Stream7_IRQHandler
-                0x080041f8                SPI5_IRQHandler
-                0x080041f8                TIM7_IRQHandler
-                0x080041f8                SDMMC1_IRQHandler
-                0x080041f8                TIM5_IRQHandler
-                0x080041f8                DMA2_Stream7_IRQHandler
-                0x080041f8                TIM15_IRQHandler
-                0x080041f8                I2C3_EV_IRQHandler
-                0x080041f8                DFSDM2_IRQHandler
-                0x080041f8                EXTI9_5_IRQHandler
-                0x080041f8                RTC_WKUP_IRQHandler
-                0x080041f8                LTDC_IRQHandler
-                0x080041f8                SPDIF_RX_IRQHandler
-                0x080041f8                PVD_PVM_IRQHandler
-                0x080041f8                SPI2_IRQHandler
-                0x080041f8                OTG_HS_EP1_IN_IRQHandler
-                0x080041f8                DFSDM1_FLT5_IRQHandler
-                0x080041f8                DMA1_Stream0_IRQHandler
-                0x080041f8                CRS_IRQHandler
-                0x080041f8                EXTI4_IRQHandler
-                0x080041f8                DFSDM1_FLT6_IRQHandler
-                0x080041f8                RNG_IRQHandler
-                0x080041f8                FDCAN2_IT1_IRQHandler
-                0x080041f8                COMP_IRQHandler
-                0x080041f8                TIM1_UP_IRQHandler
-                0x080041f8                OTG_HS_EP1_OUT_IRQHandler
-                0x080041f8                WWDG_IRQHandler
-                0x080041f8                SPI6_IRQHandler
-                0x080041f8                MDIOS_IRQHandler
-                0x080041f8                I2C4_EV_IRQHandler
-                0x080041f8                FDCAN2_IT0_IRQHandler
-                0x080041f8                LPUART1_IRQHandler
-                0x080041f8                FDCAN1_IT0_IRQHandler
-                0x080041f8                TIM2_IRQHandler
-                0x080041f8                BDMA2_Channel5_IRQHandler
-                0x080041f8                OTG_HS_IRQHandler
-                0x080041f8                DMA2D_IRQHandler
-                0x080041f8                TIM1_BRK_IRQHandler
-                0x080041f8                EXTI1_IRQHandler
-                0x080041f8                SDMMC2_IRQHandler
-                0x080041f8                DTS_IRQHandler
-                0x080041f8                UART7_IRQHandler
-                0x080041f8                MDIOS_WKUP_IRQHandler
-                0x080041f8                USART2_IRQHandler
-                0x080041f8                DFSDM1_FLT0_IRQHandler
-                0x080041f8                I2C2_ER_IRQHandler
-                0x080041f8                DMA2_Stream1_IRQHandler
-                0x080041f8                DFSDM1_FLT7_IRQHandler
-                0x080041f8                FLASH_IRQHandler
-                0x080041f8                DMA2_Stream4_IRQHandler
-                0x080041f8                USART1_IRQHandler
-                0x080041f8                SPI3_IRQHandler
-                0x080041f8                WAKEUP_PIN_IRQHandler
-                0x080041f8                DMA1_Stream4_IRQHandler
-                0x080041f8                I2C1_ER_IRQHandler
-                0x080041f8                FMC_IRQHandler
-                0x080041f8                BDMA2_Channel7_IRQHandler
-                0x080041f8                FDCAN_CAL_IRQHandler
-                0x080041f8                SWPMI1_IRQHandler
-                0x080041f8                LPTIM1_IRQHandler
-                0x080041f8                DCMI_PSSI_IRQHandler
-                0x080041f8                I2C4_ER_IRQHandler
-                0x080041f8                DMA2_Stream6_IRQHandler
-                0x080041f8                SAI1_IRQHandler
-                0x080041f8                DMA1_Stream3_IRQHandler
-                0x080041f8                RTC_TAMP_STAMP_CSS_LSE_IRQHandler
-                0x080041f8                RTC_Alarm_IRQHandler
- .text.memset   0x080041fa       0x10 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-memset.o)
-                0x080041fa                memset
- *fill*         0x0800420a        0x2 
+                0x0800416c        0x2 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
+                0x0800416c                BDMA2_Channel4_IRQHandler
+                0x0800416c                EXTI2_IRQHandler
+                0x0800416c                TIM8_CC_IRQHandler
+                0x0800416c                UART8_IRQHandler
+                0x0800416c                BDMA2_Channel1_IRQHandler
+                0x0800416c                SPI4_IRQHandler
+                0x0800416c                BDMA2_Channel0_IRQHandler
+                0x0800416c                TIM1_CC_IRQHandler
+                0x0800416c                DMA2_Stream5_IRQHandler
+                0x0800416c                JPEG_IRQHandler
+                0x0800416c                DMA1_Stream5_IRQHandler
+                0x0800416c                EXTI3_IRQHandler
+                0x0800416c                LPTIM4_IRQHandler
+                0x0800416c                TIM8_TRG_COM_TIM14_IRQHandler
+                0x0800416c                LPTIM2_IRQHandler
+                0x0800416c                DFSDM1_FLT1_IRQHandler
+                0x0800416c                DMAMUX2_OVR_IRQHandler
+                0x0800416c                GFXMMU_IRQHandler
+                0x0800416c                TIM8_UP_TIM13_IRQHandler
+                0x0800416c                I2C3_ER_IRQHandler
+                0x0800416c                DFSDM1_FLT2_IRQHandler
+                0x0800416c                USART10_IRQHandler
+                0x0800416c                MDMA_IRQHandler
+                0x0800416c                LPTIM3_IRQHandler
+                0x0800416c                BDMA2_Channel3_IRQHandler
+                0x0800416c                HSEM1_IRQHandler
+                0x0800416c                EXTI0_IRQHandler
+                0x0800416c                I2C2_EV_IRQHandler
+                0x0800416c                DAC2_IRQHandler
+                0x0800416c                DMA1_Stream2_IRQHandler
+                0x0800416c                FPU_IRQHandler
+                0x0800416c                OTG_HS_WKUP_IRQHandler
+                0x0800416c                FDCAN1_IT1_IRQHandler
+                0x0800416c                LTDC_ER_IRQHandler
+                0x0800416c                DMA2_Stream2_IRQHandler
+                0x0800416c                SPI1_IRQHandler
+                0x0800416c                OCTOSPI1_IRQHandler
+                0x0800416c                TIM6_DAC_IRQHandler
+                0x0800416c                BDMA2_Channel6_IRQHandler
+                0x0800416c                DMA2_Stream3_IRQHandler
+                0x0800416c                OCTOSPI2_IRQHandler
+                0x0800416c                SAI2_IRQHandler
+                0x0800416c                BDMA1_IRQHandler
+                0x0800416c                DFSDM1_FLT3_IRQHandler
+                0x0800416c                USART6_IRQHandler
+                0x0800416c                TIM17_IRQHandler
+                0x0800416c                USART3_IRQHandler
+                0x0800416c                LPTIM5_IRQHandler
+                0x0800416c                UART5_IRQHandler
+                0x0800416c                DMA2_Stream0_IRQHandler
+                0x0800416c                TIM4_IRQHandler
+                0x0800416c                I2C1_EV_IRQHandler
+                0x0800416c                DMA1_Stream6_IRQHandler
+                0x0800416c                DMAMUX1_OVR_IRQHandler
+                0x0800416c                DMA1_Stream1_IRQHandler
+                0x0800416c                TIM16_IRQHandler
+                0x0800416c                UART4_IRQHandler
+                0x0800416c                TIM3_IRQHandler
+                0x0800416c                RCC_IRQHandler
+                0x0800416c                UART9_IRQHandler
+                0x0800416c                TIM8_BRK_TIM12_IRQHandler
+                0x0800416c                TIM1_TRG_COM_IRQHandler
+                0x0800416c                Default_Handler
+                0x0800416c                ECC_IRQHandler
+                0x0800416c                BDMA2_Channel2_IRQHandler
+                0x0800416c                CEC_IRQHandler
+                0x0800416c                EXTI15_10_IRQHandler
+                0x0800416c                DFSDM1_FLT4_IRQHandler
+                0x0800416c                ADC_IRQHandler
+                0x0800416c                DMA1_Stream7_IRQHandler
+                0x0800416c                SPI5_IRQHandler
+                0x0800416c                TIM7_IRQHandler
+                0x0800416c                SDMMC1_IRQHandler
+                0x0800416c                TIM5_IRQHandler
+                0x0800416c                DMA2_Stream7_IRQHandler
+                0x0800416c                TIM15_IRQHandler
+                0x0800416c                I2C3_EV_IRQHandler
+                0x0800416c                DFSDM2_IRQHandler
+                0x0800416c                EXTI9_5_IRQHandler
+                0x0800416c                RTC_WKUP_IRQHandler
+                0x0800416c                LTDC_IRQHandler
+                0x0800416c                SPDIF_RX_IRQHandler
+                0x0800416c                PVD_PVM_IRQHandler
+                0x0800416c                SPI2_IRQHandler
+                0x0800416c                OTG_HS_EP1_IN_IRQHandler
+                0x0800416c                DFSDM1_FLT5_IRQHandler
+                0x0800416c                DMA1_Stream0_IRQHandler
+                0x0800416c                CRS_IRQHandler
+                0x0800416c                EXTI4_IRQHandler
+                0x0800416c                DFSDM1_FLT6_IRQHandler
+                0x0800416c                RNG_IRQHandler
+                0x0800416c                FDCAN2_IT1_IRQHandler
+                0x0800416c                COMP_IRQHandler
+                0x0800416c                TIM1_UP_IRQHandler
+                0x0800416c                OTG_HS_EP1_OUT_IRQHandler
+                0x0800416c                WWDG_IRQHandler
+                0x0800416c                SPI6_IRQHandler
+                0x0800416c                MDIOS_IRQHandler
+                0x0800416c                I2C4_EV_IRQHandler
+                0x0800416c                FDCAN2_IT0_IRQHandler
+                0x0800416c                LPUART1_IRQHandler
+                0x0800416c                FDCAN1_IT0_IRQHandler
+                0x0800416c                TIM2_IRQHandler
+                0x0800416c                BDMA2_Channel5_IRQHandler
+                0x0800416c                OTG_HS_IRQHandler
+                0x0800416c                DMA2D_IRQHandler
+                0x0800416c                TIM1_BRK_IRQHandler
+                0x0800416c                EXTI1_IRQHandler
+                0x0800416c                SDMMC2_IRQHandler
+                0x0800416c                DTS_IRQHandler
+                0x0800416c                UART7_IRQHandler
+                0x0800416c                MDIOS_WKUP_IRQHandler
+                0x0800416c                USART2_IRQHandler
+                0x0800416c                DFSDM1_FLT0_IRQHandler
+                0x0800416c                I2C2_ER_IRQHandler
+                0x0800416c                DMA2_Stream1_IRQHandler
+                0x0800416c                DFSDM1_FLT7_IRQHandler
+                0x0800416c                FLASH_IRQHandler
+                0x0800416c                DMA2_Stream4_IRQHandler
+                0x0800416c                USART1_IRQHandler
+                0x0800416c                SPI3_IRQHandler
+                0x0800416c                WAKEUP_PIN_IRQHandler
+                0x0800416c                DMA1_Stream4_IRQHandler
+                0x0800416c                I2C1_ER_IRQHandler
+                0x0800416c                FMC_IRQHandler
+                0x0800416c                BDMA2_Channel7_IRQHandler
+                0x0800416c                FDCAN_CAL_IRQHandler
+                0x0800416c                SWPMI1_IRQHandler
+                0x0800416c                LPTIM1_IRQHandler
+                0x0800416c                DCMI_PSSI_IRQHandler
+                0x0800416c                I2C4_ER_IRQHandler
+                0x0800416c                DMA2_Stream6_IRQHandler
+                0x0800416c                SAI1_IRQHandler
+                0x0800416c                DMA1_Stream3_IRQHandler
+                0x0800416c                RTC_TAMP_STAMP_CSS_LSE_IRQHandler
+                0x0800416c                RTC_Alarm_IRQHandler
+ .text.console_init
+                0x0800416e        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+                0x0800416e                console_init
+ .text.graphics_init
+                0x0800417a        0xc CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+                0x0800417a                graphics_init
+ .text.memset   0x08004186       0x10 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-memset.o)
+                0x08004186                memset
+ *fill*         0x08004196        0x2 
  .text.__libc_init_array
-                0x0800420c       0x48 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-init.o)
-                0x0800420c                __libc_init_array
+                0x08004198       0x48 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-init.o)
+                0x08004198                __libc_init_array
  *(.glue_7)
- .glue_7        0x08004254        0x0 linker stubs
+ .glue_7        0x080041e0        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x08004254        0x0 linker stubs
+ .glue_7t       0x080041e0        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x08004254        0x0 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .eh_frame      0x080041e0        0x0 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtbegin.o
  *(.init)
- .init          0x08004254        0x4 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crti.o
-                0x08004254                _init
- .init          0x08004258        0x8 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtn.o
+ .init          0x080041e0        0x4 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x080041e0                _init
+ .init          0x080041e4        0x8 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtn.o
  *(.fini)
- .fini          0x08004260        0x4 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crti.o
-                0x08004260                _fini
- .fini          0x08004264        0x8 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtn.o
-                0x0800426c                        . = ALIGN (0x4)
-                0x0800426c                        _etext = .
+ .fini          0x080041ec        0x4 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x080041ec                _fini
+ .fini          0x080041f0        0x8 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtn.o
+                0x080041f8                        . = ALIGN (0x4)
+                0x080041f8                        _etext = .
 
-.vfp11_veneer   0x0800426c        0x0
- .vfp11_veneer  0x0800426c        0x0 linker stubs
+.vfp11_veneer   0x080041f8        0x0
+ .vfp11_veneer  0x080041f8        0x0 linker stubs
 
-.v4_bx          0x0800426c        0x0
- .v4_bx         0x0800426c        0x0 linker stubs
+.v4_bx          0x080041f8        0x0
+ .v4_bx         0x080041f8        0x0 linker stubs
 
-.iplt           0x0800426c        0x0
- .iplt          0x0800426c        0x0 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+.iplt           0x080041f8        0x0
+ .iplt          0x080041f8        0x0 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.rodata         0x0800426c       0x10
-                0x0800426c                        . = ALIGN (0x4)
+.rodata         0x080041f8       0x10
+                0x080041f8                        . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
  .rodata.D1CorePrescTable
-                0x0800426c       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj
-                0x0800426c                D1CorePrescTable
-                0x0800427c                        . = ALIGN (0x4)
+                0x080041f8       0x10 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj
+                0x080041f8                D1CorePrescTable
+                0x08004208                        . = ALIGN (0x4)
 
-.ARM.extab      0x0800427c        0x0
-                0x0800427c                        . = ALIGN (0x4)
+.ARM.extab      0x08004208        0x0
+                0x08004208                        . = ALIGN (0x4)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0800427c                        . = ALIGN (0x4)
+                0x08004208                        . = ALIGN (0x4)
 
-.ARM            0x0800427c        0x0
-                0x0800427c                        . = ALIGN (0x4)
-                0x0800427c                        __exidx_start = .
+.ARM            0x08004208        0x0
+                0x08004208                        . = ALIGN (0x4)
+                0x08004208                        __exidx_start = .
  *(.ARM.exidx*)
-                0x0800427c                        __exidx_end = .
-                0x0800427c                        . = ALIGN (0x4)
+                0x08004208                        __exidx_end = .
+                0x08004208                        . = ALIGN (0x4)
 
-.preinit_array  0x0800427c        0x0
-                0x0800427c                        . = ALIGN (0x4)
-                0x0800427c                        PROVIDE (__preinit_array_start = .)
+.preinit_array  0x08004208        0x0
+                0x08004208                        . = ALIGN (0x4)
+                0x08004208                        PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800427c                        PROVIDE (__preinit_array_end = .)
-                0x0800427c                        . = ALIGN (0x4)
+                0x08004208                        PROVIDE (__preinit_array_end = .)
+                0x08004208                        . = ALIGN (0x4)
 
-.init_array     0x0800427c        0x4
-                0x0800427c                        . = ALIGN (0x4)
-                0x0800427c                        PROVIDE (__init_array_start = .)
+.init_array     0x08004208        0x4
+                0x08004208                        . = ALIGN (0x4)
+                0x08004208                        PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0800427c        0x4 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtbegin.o
-                0x08004280                        PROVIDE (__init_array_end = .)
-                0x08004280                        . = ALIGN (0x4)
+ .init_array    0x08004208        0x4 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+                0x0800420c                        PROVIDE (__init_array_end = .)
+                0x0800420c                        . = ALIGN (0x4)
 
-.fini_array     0x08004280        0x4
-                0x08004280                        . = ALIGN (0x4)
+.fini_array     0x0800420c        0x4
+                0x0800420c                        . = ALIGN (0x4)
                 [!provide]                        PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x08004280        0x4 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .fini_array    0x0800420c        0x4 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtbegin.o
                 [!provide]                        PROVIDE (__fini_array_end = .)
-                0x08004284                        . = ALIGN (0x4)
-                0x08004284                        _sidata = LOADADDR (.data)
+                0x08004210                        . = ALIGN (0x4)
+                0x08004210                        _sidata = LOADADDR (.data)
 
-.rel.dyn        0x08004284        0x0
- .rel.iplt      0x08004284        0x0 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+.rel.dyn        0x08004210        0x0
+ .rel.iplt      0x08004210        0x0 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.data           0x20000000       0x10 load address 0x08004284
+.data           0x20000000       0x10 load address 0x08004210
                 0x20000000                        . = ALIGN (0x4)
                 0x20000000                        _sdata = .
  *(.data)
@@ -5567,16 +5614,16 @@ LOAD /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  *fill*         0x2000000d        0x3 
 
 .tm_clone_table
-                0x20000010        0x0 load address 0x08004294
+                0x20000010        0x0 load address 0x08004220
  .tm_clone_table
                 0x20000010        0x0 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtbegin.o
  .tm_clone_table
                 0x20000010        0x0 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtend.o
 
-.igot.plt       0x20000010        0x0 load address 0x08004294
+.igot.plt       0x20000010        0x0 load address 0x08004220
  .igot.plt      0x20000010        0x0 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.tdata          0x20000010        0x0 load address 0x08004294
+.tdata          0x20000010        0x0 load address 0x08004220
  *(.tdata .tdata.* .gnu.linkonce.td.*)
                 0x20000010                        . = ALIGN (0x4)
                 0x20000010                        _edata = .
@@ -5593,7 +5640,7 @@ LOAD /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 [!provide]                        PROVIDE (__data_source_end = __tdata_source_end)
                 [!provide]                        PROVIDE (__data_source_size = (__data_source_end - __data_source))
 
-.tbss           0x20000010        0x0 load address 0x08004294
+.tbss           0x20000010        0x0 load address 0x08004220
                 0x20000010                        _sbss = .
                 0x20000010                        __bss_start__ = _sbss
  *(.tbss .tbss.*)
@@ -5610,7 +5657,7 @@ LOAD /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 [!provide]                        PROVIDE (__arm32_tls_tcb_offset = MAX (0x8, __tls_align))
                 [!provide]                        PROVIDE (__arm64_tls_tcb_offset = MAX (0x10, __tls_align))
 
-.bss            0x20000010      0x150 load address 0x08004294
+.bss            0x20000010      0x150 load address 0x08004220
  *(.bss)
  *(.bss*)
  .bss.completed.1
@@ -5633,7 +5680,7 @@ LOAD /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 [!provide]                        PROVIDE (__bss_size = (__bss_end - __bss_start))
 
 ._user_heap_stack
-                0x20000160      0x600 load address 0x08004294
+                0x20000160      0x600 load address 0x08004220
                 0x20000160                        . = ALIGN (0x8)
                 [!provide]                        PROVIDE (end = .)
                 0x20000160                        PROVIDE (_end = .)
@@ -5642,6 +5689,13 @@ LOAD /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x20000760                        . = (. + _Min_Stack_Size)
  *fill*         0x20000360      0x400 
                 0x20000760                        . = ALIGN (0x8)
+
+.framebuffer    0x24000000    0x25800
+                0x24000000                        . = ALIGN (0x20)
+ *(.framebuffer)
+ .framebuffer   0x24000000    0x25800 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+                0x24000000                FRAME_BUFFER_A
+                0x24012c00                FRAME_BUFFER_B
 
 /DISCARD/
  libc.a:*(*)
@@ -5689,13 +5743,17 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000340       0x21 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
  .ARM.attributes
-                0x00000361       0x32 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-memset.o)
+                0x00000361       0x32 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
  .ARM.attributes
-                0x00000393       0x32 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-init.o)
+                0x00000393       0x32 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
  .ARM.attributes
-                0x000003c5       0x32 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtend.o
+                0x000003c5       0x32 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-memset.o)
  .ARM.attributes
-                0x000003f7       0x20 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtn.o
+                0x000003f7       0x32 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-init.o)
+ .ARM.attributes
+                0x00000429       0x32 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtend.o
+ .ARM.attributes
+                0x0000045b       0x20 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/thumb/v7e-m+dp/hard/crtn.o
 
 .comment        0x00000000       0x46
  .comment       0x00000000       0x46 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj
@@ -5728,8 +5786,12 @@ LOAD linker stubs
                                  0x47 (size before relaxing)
  .comment       0x00000046        0x0 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
                                  0x47 (size before relaxing)
+ .comment       0x00000046        0x0 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+                                 0x47 (size before relaxing)
+ .comment       0x00000046        0x0 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+                                 0x47 (size before relaxing)
 
-.debug_info     0x00000000     0xc741
+.debug_info     0x00000000     0xc824
  .debug_info    0x00000000      0xd42 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj
  .debug_info    0x00000d42     0x10a0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
  .debug_info    0x00001de2      0xeba cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
@@ -5739,15 +5801,17 @@ LOAD linker stubs
  .debug_info    0x000058f0     0x13f1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
  .debug_info    0x00006ce1     0x1051 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
  .debug_info    0x00007d32     0x1454 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
- .debug_info    0x00009186      0x9ec CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
- .debug_info    0x00009b72      0x6af CMakeFiles/ConsoleFirmware.dir/Core/Src/gpio.c.obj
- .debug_info    0x0000a221      0xe81 CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj
- .debug_info    0x0000b0a2     0x10bc CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
- .debug_info    0x0000c15e      0x128 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
- .debug_info    0x0000c286      0x48b CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
- .debug_info    0x0000c711       0x30 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
+ .debug_info    0x00009186      0x90f CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
+ .debug_info    0x00009a95      0x6af CMakeFiles/ConsoleFirmware.dir/Core/Src/gpio.c.obj
+ .debug_info    0x0000a144      0xe81 CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj
+ .debug_info    0x0000afc5     0x10bc CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
+ .debug_info    0x0000c081      0x128 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_info    0x0000c1a9      0x48b CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_info    0x0000c634       0x30 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
+ .debug_info    0x0000c664       0x92 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_info    0x0000c6f6      0x12e CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
 
-.debug_abbrev   0x00000000     0x1fac
+.debug_abbrev   0x00000000     0x20e3
  .debug_abbrev  0x00000000      0x165 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj
  .debug_abbrev  0x00000165      0x339 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
  .debug_abbrev  0x0000049e      0x2c5 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
@@ -5757,15 +5821,17 @@ LOAD linker stubs
  .debug_abbrev  0x00000e75      0x291 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
  .debug_abbrev  0x00001106      0x23a cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
  .debug_abbrev  0x00001340      0x2ba cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
- .debug_abbrev  0x000015fa      0x243 CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
- .debug_abbrev  0x0000183d      0x19a CMakeFiles/ConsoleFirmware.dir/Core/Src/gpio.c.obj
- .debug_abbrev  0x000019d7      0x218 CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj
- .debug_abbrev  0x00001bef      0x23a CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
- .debug_abbrev  0x00001e29       0x73 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
- .debug_abbrev  0x00001e9c       0xec CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
- .debug_abbrev  0x00001f88       0x24 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
+ .debug_abbrev  0x000015fa      0x242 CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x0000183c      0x19a CMakeFiles/ConsoleFirmware.dir/Core/Src/gpio.c.obj
+ .debug_abbrev  0x000019d6      0x218 CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj
+ .debug_abbrev  0x00001bee      0x23a CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
+ .debug_abbrev  0x00001e28       0x73 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_abbrev  0x00001e9b       0xec CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_abbrev  0x00001f87       0x24 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
+ .debug_abbrev  0x00001fab       0x58 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_abbrev  0x00002003       0xe0 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
 
-.debug_aranges  0x00000000      0xab8
+.debug_aranges  0x00000000      0xb08
  .debug_aranges
                 0x00000000       0x30 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj
  .debug_aranges
@@ -5798,9 +5864,13 @@ LOAD linker stubs
                 0x00000a70       0x20 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
  .debug_aranges
                 0x00000a90       0x28 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
+ .debug_aranges
+                0x00000ab8       0x20 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_aranges
+                0x00000ad8       0x30 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
 
 .debug_rnglists
-                0x00000000      0x7fb
+                0x00000000      0x82d
  .debug_rnglists
                 0x00000000       0x21 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj
  .debug_rnglists
@@ -5833,8 +5903,12 @@ LOAD linker stubs
                 0x000007cf       0x13 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
  .debug_rnglists
                 0x000007e2       0x19 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
+ .debug_rnglists
+                0x000007fb       0x13 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_rnglists
+                0x0000080e       0x1f CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
 
-.debug_macro    0x00000000    0x2f8c9
+.debug_macro    0x00000000    0x2f9c9
  .debug_macro   0x00000000      0x2b1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj
  .debug_macro   0x000002b1      0xb08 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj
  .debug_macro   0x00000db9       0x2e cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj
@@ -5904,15 +5978,17 @@ LOAD linker stubs
  .debug_macro   0x0002df8a      0x2db cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
  .debug_macro   0x0002e265      0x2b9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
  .debug_macro   0x0002e51e      0x2b9 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
- .debug_macro   0x0002e7d7      0x2e2 CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
- .debug_macro   0x0002eab9       0x28 CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
- .debug_macro   0x0002eae1      0x2ca CMakeFiles/ConsoleFirmware.dir/Core/Src/gpio.c.obj
- .debug_macro   0x0002edab      0x2ca CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj
- .debug_macro   0x0002f075      0x2ca CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
- .debug_macro   0x0002f33f      0x2ca CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
- .debug_macro   0x0002f609      0x2c0 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_macro   0x0002e7d7      0x2ec CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
+ .debug_macro   0x0002eac3       0x28 CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
+ .debug_macro   0x0002eaeb      0x2ca CMakeFiles/ConsoleFirmware.dir/Core/Src/gpio.c.obj
+ .debug_macro   0x0002edb5      0x2ca CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj
+ .debug_macro   0x0002f07f      0x2ca CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
+ .debug_macro   0x0002f349      0x2ca CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_macro   0x0002f613      0x2c0 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_macro   0x0002f8d3       0x80 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_macro   0x0002f953       0x76 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
 
-.debug_line     0x00000000     0xd7bd
+.debug_line     0x00000000     0xdd3e
  .debug_line    0x00000000      0x9a7 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj
  .debug_line    0x000009a7      0xd7c cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
  .debug_line    0x00001723     0x13c4 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
@@ -5922,49 +5998,55 @@ LOAD linker stubs
  .debug_line    0x00006292      0xd94 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
  .debug_line    0x00007026     0x13ae cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
  .debug_line    0x000083d4     0x215f cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
- .debug_line    0x0000a533      0x8a5 CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
- .debug_line    0x0000add8      0x7bf CMakeFiles/ConsoleFirmware.dir/Core/Src/gpio.c.obj
- .debug_line    0x0000b597      0x93e CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj
- .debug_line    0x0000bed5      0x867 CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
- .debug_line    0x0000c73c      0x85b CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
- .debug_line    0x0000cf97      0x7ab CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
- .debug_line    0x0000d742       0x7b CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
+ .debug_line    0x0000a533      0x8e5 CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
+ .debug_line    0x0000ae18      0x7bf CMakeFiles/ConsoleFirmware.dir/Core/Src/gpio.c.obj
+ .debug_line    0x0000b5d7      0x93e CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj
+ .debug_line    0x0000bf15      0x867 CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
+ .debug_line    0x0000c77c      0x85b CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_line    0x0000cfd7      0x7ab CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_line    0x0000d782       0x7b CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
+ .debug_line    0x0000d7fd      0x28f CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_line    0x0000da8c      0x2b2 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
 
-.debug_str      0x00000000   0x1317e5
- .debug_str     0x00000000   0x1317e5 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj
+.debug_str      0x00000000   0x1318f1
+ .debug_str     0x00000000   0x1318f1 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj
                              0x12dc24 (size before relaxing)
- .debug_str     0x001317e5        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
+ .debug_str     0x001318f1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
                              0x12e500 (size before relaxing)
- .debug_str     0x001317e5        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
+ .debug_str     0x001318f1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
                              0x12dfb6 (size before relaxing)
- .debug_str     0x001317e5        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
+ .debug_str     0x001318f1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj
                              0x12e44b (size before relaxing)
- .debug_str     0x001317e5        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
+ .debug_str     0x001318f1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c.obj
                              0x12db8e (size before relaxing)
- .debug_str     0x001317e5        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
+ .debug_str     0x001318f1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c.obj
                              0x12e11a (size before relaxing)
- .debug_str     0x001317e5        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
+ .debug_str     0x001318f1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c.obj
                              0x12eab1 (size before relaxing)
- .debug_str     0x001317e5        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
+ .debug_str     0x001318f1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_ltdc.c.obj
                              0x12deb6 (size before relaxing)
- .debug_str     0x001317e5        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
+ .debug_str     0x001318f1        0x0 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi.c.obj
                              0x12e2a8 (size before relaxing)
- .debug_str     0x001317e5        0x0 CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
-                             0x12dd5a (size before relaxing)
- .debug_str     0x001317e5        0x0 CMakeFiles/ConsoleFirmware.dir/Core/Src/gpio.c.obj
+ .debug_str     0x001318f1        0x0 CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj
+                             0x12dd0f (size before relaxing)
+ .debug_str     0x001318f1        0x0 CMakeFiles/ConsoleFirmware.dir/Core/Src/gpio.c.obj
                              0x12da2b (size before relaxing)
- .debug_str     0x001317e5        0x0 CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj
+ .debug_str     0x001318f1        0x0 CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj
                              0x12e0c9 (size before relaxing)
- .debug_str     0x001317e5        0x0 CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
+ .debug_str     0x001318f1        0x0 CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
                              0x12e3c0 (size before relaxing)
- .debug_str     0x001317e5        0x0 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
+ .debug_str     0x001318f1        0x0 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
                              0x12d79e (size before relaxing)
- .debug_str     0x001317e5        0x0 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
+ .debug_str     0x001318f1        0x0 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
                              0x12d960 (size before relaxing)
- .debug_str     0x001317e5        0x0 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
+ .debug_str     0x001318f1        0x0 CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj
                                  0xa2 (size before relaxing)
+ .debug_str     0x001318f1        0x0 CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+                               0x4271 (size before relaxing)
+ .debug_str     0x001318f1        0x0 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+                               0x42bf (size before relaxing)
 
-.debug_frame    0x00000000     0x2ab4
+.debug_frame    0x00000000     0x2b60
  .debug_frame   0x00000000       0x68 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32h7xx.c.obj
  .debug_frame   0x00000068      0x508 cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj
  .debug_frame   0x00000570      0x1fc cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj
@@ -5980,8 +6062,10 @@ LOAD linker stubs
  .debug_frame   0x000028b4       0x78 CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj
  .debug_frame   0x0000292c      0x104 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj
  .debug_frame   0x00002a30       0x38 CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj
- .debug_frame   0x00002a68       0x20 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-memset.o)
- .debug_frame   0x00002a88       0x2c /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-init.o)
+ .debug_frame   0x00002a68       0x2c CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj
+ .debug_frame   0x00002a94       0x80 CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj
+ .debug_frame   0x00002b14       0x20 /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-memset.o)
+ .debug_frame   0x00002b34       0x2c /Applications/ArmGNUToolchain/15.3.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/15.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/libg_nano.a(libc_a-init.o)
 
 .debug_line_str
                 0x00000000       0x86

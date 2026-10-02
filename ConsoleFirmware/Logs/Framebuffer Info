@@ -1,0 +1,15 @@
+The two Framebuffers will live in the MCU's AXI SRAM (refer to STM32H7A3xx_FLASH.ld):
+RAM (xrw)      : ORIGIN = 0x24000000, LENGTH = 1024K
+AXI SRAM
+- 0x24000000
+FRAME_BUFFER_A
+- 0x24000000
+- 76,800 bytes
+
+FRAME_BUFFER_B
+- 0x24012C00
+- 76,800 bytes
+
+We'll have the framebuffer arrays be defined in the graphics module themselves, and use the linker script to control where our framebuffer is placed in memory when we build (the linker script will place it in designated RAM sections).
+
+graphics_init() will clear both buffers, graphics_get_framebuffer() will return the buffer we currently update/draw (not the one displayed).

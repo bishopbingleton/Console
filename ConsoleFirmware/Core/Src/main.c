@@ -21,6 +21,7 @@
 #include "ltdc.h"
 #include "spi.h"
 #include "gpio.h"
+#include "console.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -95,6 +96,7 @@ int main(void)
   MX_LTDC_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
+  console_init();
 
   /* USER CODE END 2 */
 

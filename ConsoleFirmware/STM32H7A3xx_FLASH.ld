@@ -239,6 +239,12 @@ SECTIONS
     . = ALIGN(8);
   } >DTCMRAM
 
+  /* FRAME BUFFER SECTION*/
+  .framebuffer (NOLOAD):
+  {
+    . = ALIGN(32);
+    KEEP(*(.framebuffer))
+  } >RAM
 
 
   /* Remove information from the standard libraries */
