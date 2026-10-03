@@ -78,14 +78,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ConsoleFirmware::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ConsoleFirmware-Debug-28f5db2f2642a62ed5ab.json",
+					"jsonFile" : "target-ConsoleFirmware-Debug-43189a572d7991c897b2.json",
 					"name" : "ConsoleFirmware",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "STM32_Drivers::@768a070a0fe75716b479",
-					"jsonFile" : "target-STM32_Drivers-Debug-818173857cd58a046316.json",
+					"jsonFile" : "target-STM32_Drivers-Debug-8aa6527f683541e95565.json",
 					"name" : "STM32_Drivers",
 					"projectIndex" : 0
 				}

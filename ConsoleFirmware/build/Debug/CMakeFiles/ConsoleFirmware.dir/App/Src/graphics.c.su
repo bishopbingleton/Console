@@ -1,3 +1,7 @@
-/Users/austinshu/Projects/Console/ConsoleFirmware/App/Src/graphics.c:19:6:graphics_init	4	static
-/Users/austinshu/Projects/Console/ConsoleFirmware/App/Src/graphics.c:23:11:graphics_get_framebuffer	16	static
-/Users/austinshu/Projects/Console/ConsoleFirmware/App/Src/graphics.c:28:6:graphics_clear	16	static
+/Users/austinshu/Projects/Console/ConsoleFirmware/App/Src/graphics.c:26:6:graphics_init	8	static
+/Users/austinshu/Projects/Console/ConsoleFirmware/App/Src/graphics.c:31:11:graphics_get_framebuffer	4	static
+/Users/austinshu/Projects/Console/ConsoleFirmware/App/Src/graphics.c:37:6:graphics_present	16	static
+/Users/austinshu/Projects/Console/ConsoleFirmware/App/Src/graphics.c:45:6:graphics_clear	16	static
+/Users/austinshu/Projects/Console/ConsoleFirmware/App/Src/graphics.c:52:13:graphics_clear_buffer	24	static
+/Users/austinshu/Projects/Console/ConsoleFirmware/App/Src/graphics.c:61:10:graphics_get_pixel	16	static
+/Users/austinshu/Projects/Console/ConsoleFirmware/App/Src/graphics.c:69:6:graphics_draw_pixel	16	static
