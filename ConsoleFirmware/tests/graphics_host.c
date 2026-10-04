@@ -1,24 +1,12 @@
-#include "graphics.h"
-/*
-    Game Res: 240x160 px
-    RGB565 (16bits)
-        2 bytes/px
-    --------------------
-    1 Framebuffer: 76,800 bytes
-    Double buffering: 153,600 bytes
+#include <stdint.h>
+#include <stdbool.h>
 
-*/
-
-// Frame Buffer Declarations
-// __attribute__ is GNU compiler syntax, tells us to align the starting address of each buffer to
-// 32 bytes, and put the memory in a specific section named .framebuffer which we will then define
-// in the linker script
 
 #define GRAPHICS_WIDTH 240
 #define GRAPHICS_HEIGHT 160
 static void graphics_clear_buffer(uint16_t* ptr, uint16_t fill_color);
-uint16_t FRAME_BUFFER_A[GRAPHICS_HEIGHT][GRAPHICS_WIDTH] __attribute__((section(".framebuffer"), aligned(32)));
-uint16_t FRAME_BUFFER_B[GRAPHICS_HEIGHT][GRAPHICS_WIDTH] __attribute__((section(".framebuffer"), aligned(32)));
+uint16_t FRAME_BUFFER_A[GRAPHICS_HEIGHT][GRAPHICS_WIDTH];
+uint16_t FRAME_BUFFER_B[GRAPHICS_HEIGHT][GRAPHICS_WIDTH];
 static uint16_t *drawing_buffer = &FRAME_BUFFER_A[0][0];
 static uint16_t *display_buffer  = &FRAME_BUFFER_B[0][0];
 const uint16_t G_BLACK = 0x0000;
@@ -73,6 +61,8 @@ bool graphics_draw_pixel(uint16_t x, uint16_t y, uint16_t color) {
     drawing_buffer[y * GRAPHICS_WIDTH + x] = color;
     return true;
 }
+
+
 
 bool graphics_fill_rect(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint16_t color) {
     uint32_t x_lim = x + width;
