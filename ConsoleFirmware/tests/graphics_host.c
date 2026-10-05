@@ -2,11 +2,13 @@
 #include <stdbool.h>
 
 
-#define GRAPHICS_WIDTH 240
-#define GRAPHICS_HEIGHT 160
+#define GRAPHICS_WIDTH 240 // Game graphics width
+#define GRAPHICS_HEIGHT 160 // Game graphics height
+#define LCD_WIDTH 480 // Display graphics width
+#define LCD_HEIGHT 320 // Display graphics height
 static void graphics_clear_buffer(uint16_t* ptr, uint16_t fill_color);
-uint16_t FRAME_BUFFER_A[GRAPHICS_HEIGHT][GRAPHICS_WIDTH];
-uint16_t FRAME_BUFFER_B[GRAPHICS_HEIGHT][GRAPHICS_WIDTH];
+uint16_t FRAME_BUFFER_A[LCD_HEIGHT][LCD_WIDTH];
+uint16_t FRAME_BUFFER_B[LCD_HEIGHT][LCD_WIDTH];
 static uint16_t *drawing_buffer = &FRAME_BUFFER_A[0][0];
 static uint16_t *display_buffer  = &FRAME_BUFFER_B[0][0];
 const uint16_t G_BLACK = 0x0000;
@@ -16,9 +18,9 @@ void graphics_init(void) {
     graphics_clear_buffer(drawing_buffer, G_BLACK);
 }
 
-uint16_t* graphics_get_framebuffer(void) {
-    return drawing_buffer;
-}
+// uint16_t* graphics_get_framebuffer(void) {
+//     return drawing_buffer;
+// }
 
 //Supposed to switch display -> switch the two buffer pointers,
 //(todo) update LCD through LTDC later
@@ -38,48 +40,59 @@ void graphics_clear(uint16_t fill_color) {
 //Sets the entirety of a specified buffer to one color
 //(todo) optimize process by using DMA2D later
 static void graphics_clear_buffer(uint16_t* ptr, uint16_t fill_color) {
-    for (uint16_t i = 0; i < GRAPHICS_HEIGHT; i++) {
-        for (uint16_t j = 0; j < GRAPHICS_WIDTH; j++) {
-            ptr[i * GRAPHICS_WIDTH + j] = fill_color;
+    for (uint16_t i = 0; i < LCD_HEIGHT; i++) {
+        for (uint16_t j = 0; j < LCD_WIDTH; j++) {
+            ptr[i * LCD_WIDTH + j] = fill_color;
         }
     }
 }
 
 
-uint16_t graphics_get_pixel(uint16_t x, uint16_t y) {
+uint16_t graphics_get_screen_pixel(uint16_t x, uint16_t y) {
+    if (x >= LCD_WIDTH || y >= LCD_HEIGHT) {
+        return G_BLACK;
+    }
+    
+    return drawing_buffer[y * LCD_WIDTH + x];
+}
+
+uint16_t graphics_get_game_pixel(uint16_t x, uint16_t y) {
     if (x >= GRAPHICS_WIDTH || y >= GRAPHICS_HEIGHT) {
         return G_BLACK;
     }
     
-    return drawing_buffer[y * GRAPHICS_WIDTH + x];
+    return drawing_buffer[y * LCD_WIDTH * 2 + x * 2];
 }
 
-bool graphics_draw_pixel(uint16_t x, uint16_t y, uint16_t color) {
+bool graphics_draw_game_pixel(uint16_t x, uint16_t y, uint16_t color) {
     if (x >= GRAPHICS_WIDTH || y >= GRAPHICS_HEIGHT) {
         return false;
     }
-    drawing_buffer[y * GRAPHICS_WIDTH + x] = color;
+    drawing_buffer[2 * y * LCD_WIDTH + x * 2] = color;
+    drawing_buffer[2 * y * LCD_WIDTH + x * 2 + 1] = color;
+    drawing_buffer[(2 * y + 1) * LCD_WIDTH + x * 2] = color;
+    drawing_buffer[(2 * y + 1) * LCD_WIDTH + x * 2 + 1] = color;
     return true;
 }
 
-
-
-bool graphics_fill_rect(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint16_t color) {
-    uint32_t x_lim = x + width;
-    uint32_t y_lim = y + height;
+bool graphics_fill_game_rect(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint16_t color) {
     if (x >= GRAPHICS_WIDTH || y >= GRAPHICS_HEIGHT
       || width == 0 || height == 0) {
         return false;
     }
-    if (x_lim > GRAPHICS_WIDTH) {
-        x_lim = GRAPHICS_WIDTH;
+    uint32_t x_lim = x + width;
+    uint32_t y_lim = y + height;
+    x_lim *= 2;
+    y_lim *= 2;
+    if (x_lim > LCD_WIDTH) {
+        x_lim = LCD_WIDTH;
     }
-    if (y_lim > GRAPHICS_HEIGHT) {
-        y_lim = GRAPHICS_HEIGHT;
+    if (y_lim > LCD_HEIGHT) {
+        y_lim = LCD_HEIGHT;
     }
-    for (uint16_t i = y; i < y_lim; i++) {
-        for (uint16_t j = x; j < x_lim; j++) {
-            drawing_buffer[i * GRAPHICS_WIDTH + j] = color;
+    for (uint16_t i = 2 * y; i < y_lim; i++) {
+        for (uint16_t j = 2 * x; j < x_lim; j++) {
+            drawing_buffer[i * LCD_WIDTH + j] = color;
         }
     }
     return true;

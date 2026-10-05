@@ -1,13 +1,13 @@
 # ninja log v7
 5	60	1790909122799505446	CMakeFiles/ConsoleFirmware.dir/startup_stm32h7a3xx.s.obj	80e360797a79f2a4
-3	45	1790909221069103671	CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj	517ecc341939c79f
+9	161	1791149766525268957	CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj	517ecc341939c79f
 4	88	1790909122797887277	CMakeFiles/ConsoleFirmware.dir/Core/Src/sysmem.c.obj	a44f76ae7004d15
 5	101	1790909122798884653	CMakeFiles/ConsoleFirmware.dir/Core/Src/syscalls.c.obj	d87b8ac31aec546
 3	317	1790909122797218192	CMakeFiles/ConsoleFirmware.dir/Core/Src/spi.c.obj	417ce9bbe8243eee
 3	324	1790909122797451318	CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_it.c.obj	33bf0a5fc68fda0
 2	288	1790909122796296107	CMakeFiles/ConsoleFirmware.dir/Core/Src/main.c.obj	c2bbdf5508e272b0
 3	315	1790909122797667151	CMakeFiles/ConsoleFirmware.dir/Core/Src/stm32h7xx_hal_msp.c.obj	29f5484fd282590d
-3	375	1790909122796971900	CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj	36745df5701e500d
+8	317	1791149766524733748	CMakeFiles/ConsoleFirmware.dir/Core/Src/ltdc.c.obj	36745df5701e500d
 3	321	1790909122796703150	CMakeFiles/ConsoleFirmware.dir/Core/Src/gpio.c.obj	1c9ef16cab77844e
 9	374	1790909122802808785	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c.obj	9edf0e4ca1430eb5
 60	488	1790909122854439502	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c.obj	2f5e83a3d9e19aef
@@ -15,7 +15,7 @@
 9	495	1790909122803650037	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c.obj	a9175ff82f0b9e7f
 10	503	1790909122803976079	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c.obj	cdee9e6df656eaaf
 65	492	1790909122859058302	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c.obj	38bdbff03807597b
-7	78	1790909122800837490	CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj	7302b10f209aed56
+9	166	1791149766525565166	CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj	7302b10f209aed56
 374	681	1790909123167813440	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c.obj	7fc0dbcbecf49c77
 88	464	1790909122882195885	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c.obj	ca970e207aa1914a
 489	705	1790909123283054022	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_spi_ex.c.obj	c3db66583342daae
@@ -33,9 +33,8 @@
 89	586	1790909122882881678	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c.obj	5a0a3bea80e4090a
 324	764	1790909123117983642	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c.obj	9c752bc093284b7e
 492	703	1790909123286618362	cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_tim_ex.c.obj	173d4d99e1f7cf5f
-45	134	1790909221111524956	ConsoleFirmware.elf	77a1b1d0d7c834d
-3	45	1790909221069835464	CMakeFiles/ConsoleFirmware.dir/App/Src/graphics_test.c.obj	2939630617c251f5
-1	125	1791006440546167857	CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj	517ecc341939c79f
-3	125	1791006440547857486	CMakeFiles/ConsoleFirmware.dir/App/Src/graphics_test.c.obj	2939630617c251f5
-3	125	1791006440547558069	CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj	7302b10f209aed56
 125	269	1791006440670076698	ConsoleFirmware.elf	77a1b1d0d7c834d
+3	125	1791006440547857486	CMakeFiles/ConsoleFirmware.dir/App/Src/graphics_test.c.obj	2939630617c251f5
+2	40	1791149804384915928	CMakeFiles/ConsoleFirmware.dir/App/Src/graphics.c.obj	7302b10f209aed56
+1	34	1791149828578846029	CMakeFiles/ConsoleFirmware.dir/App/Src/console.c.obj	517ecc341939c79f
+34	234	1791149828611776354	ConsoleFirmware.elf	5c5350a9105f0aa9

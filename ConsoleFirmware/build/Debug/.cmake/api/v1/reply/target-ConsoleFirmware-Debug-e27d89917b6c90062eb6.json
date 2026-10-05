@@ -43,13 +43,13 @@
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 68,
+				"line" : 67,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 54,
+				"line" : 53,
 				"parent" : 0
 			},
 			{
@@ -157,8 +157,7 @@
 				6,
 				7,
 				9,
-				10,
-				11
+				10
 			]
 		},
 		{
@@ -286,8 +285,7 @@
 				6,
 				7,
 				9,
-				10,
-				11
+				10
 			]
 		},
 		{
@@ -301,6 +299,7 @@
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
+				11,
 				12,
 				13,
 				14,
@@ -322,8 +321,7 @@
 				30,
 				31,
 				32,
-				33,
-				34
+				33
 			]
 		}
 	],
@@ -437,16 +435,6 @@
 			],
 			"compileGroupIndex" : 0,
 			"path" : "App/Src/graphics.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 7,
-			"backtraces" : 
-			[
-				7
-			],
-			"compileGroupIndex" : 0,
-			"path" : "App/Src/graphics_test.c",
 			"sourceGroupIndex" : 0
 		},
 		{
