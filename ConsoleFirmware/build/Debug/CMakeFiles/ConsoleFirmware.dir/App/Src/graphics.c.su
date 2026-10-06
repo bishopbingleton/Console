@@ -6,3 +6,4 @@
 /Users/austinshu/Projects/Console/ConsoleFirmware/App/Src/graphics.c:72:10:graphics_get_game_pixel	16	static
 /Users/austinshu/Projects/Console/ConsoleFirmware/App/Src/graphics.c:80:6:graphics_draw_game_pixel	16	static
 /Users/austinshu/Projects/Console/ConsoleFirmware/App/Src/graphics.c:91:6:graphics_fill_game_rect	32	static
+/Users/austinshu/Projects/Console/ConsoleFirmware/App/Src/graphics.c:114:6:graphics_draw_game_rect	56	static

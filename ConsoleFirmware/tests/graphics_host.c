@@ -98,3 +98,41 @@ bool graphics_fill_game_rect(uint16_t x, uint16_t y, uint16_t width, uint16_t he
     return true;
 
 }
+
+
+bool graphics_draw_game_rect(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint16_t color) {
+    if (x >= 240 || y >= 160 || width == 0 || height == 0) {
+        return false;
+    }
+    uint32_t x_bound = x + width;
+    uint32_t y_bound = y + height;
+    bool draw_right = true;
+    bool draw_bot = true;
+    if (x_bound > 240) {
+        draw_right = false;
+        x_bound = 240;
+    }
+    if (y_bound > 160) {
+        draw_bot = false;
+        y_bound = 160;
+    }
+
+    for (uint32_t i = x; i < x_bound; i++) {
+        graphics_draw_game_pixel(i, y, color);
+    }
+
+    for (uint32_t i = y; i < y_bound; i++) {
+        graphics_draw_game_pixel(x, i, color);
+    }
+    if (draw_bot) {
+        for (uint32_t i = x; i < x_bound; i++) {
+            graphics_draw_game_pixel(i, y_bound - 1, color);
+        }
+    }
+    if (draw_right) {
+        for (uint32_t i = y; i < y_bound; i++) {
+            graphics_draw_game_pixel(x_bound - 1, i, color);
+        }
+    }
+    return true;
+}
