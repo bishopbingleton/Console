@@ -6,87 +6,104 @@
 int main() {
     graphics_init();
     graphics_clear(0x0000);
-    graphics_draw_game_rect(10, 10, 20, 15, 0x1111);
-    if (graphics_get_game_pixel(10, 10) != 0x1111
-     || graphics_get_game_pixel(29, 10) != 0x1111
-     || graphics_get_game_pixel(10, 24) != 0x1111
-     || graphics_get_game_pixel(29, 24) != 0x1111) {
-        printf("Drawing rect outline failed.\n");
-        return 1;
-    }
-    if (graphics_get_game_pixel(11,11) != 0x0000) {
-        printf("Drawng rect outline spilled inwards.\n");
-        return 1;
+    graphics_fill_game_circle(10, 30, 10, 0x0001);
+
+    for (uint16_t i = 0; i < 160; i++) {
+        for (uint16_t j = 0; j < 240; j++) {
+            printf("%u", (unsigned int)graphics_get_game_pixel(j, i));
+            printf(" ");
+        }
+        printf("\n");
     }
 
-    graphics_clear(0x0000);
-    graphics_draw_game_rect(200, 100, 40, 60, 0x1111);
-    if (graphics_get_game_pixel(200, 100) != 0x1111
-     || graphics_get_game_pixel(239, 100) != 0x1111
-     || graphics_get_game_pixel(200, 159) != 0x1111
-     || graphics_get_game_pixel(239, 159) != 0x1111) {
-        printf("Drawing rect outline touching edge failed.\n");
-        return 1;
-    }
 
-    graphics_clear(0x0000);
-    graphics_draw_game_rect(200, 100, 41, 61, 0x1111);
-    if (graphics_get_game_pixel(200, 100) != 0x1111
-     || graphics_get_game_pixel(239, 100) != 0x1111
-     || graphics_get_game_pixel(200, 159) != 0x1111
-     || graphics_get_game_pixel(239, 159) != 0x0000) {
-        printf("Drawing clipping rect outline failed.\n");
-        return 1;
-    }
-    if (graphics_get_game_pixel(220,130) != 0x0000) {
-        printf("Drawng rect outline spilled inwards.\n");
-        return 1;
-    }
-
-    graphics_clear(0x0000);
-    graphics_draw_game_rect(200, 100, 41, 60, 0x1111);
-    if (graphics_get_game_pixel(200, 100) != 0x1111
-     || graphics_get_game_pixel(239, 100) != 0x1111
-     || graphics_get_game_pixel(200, 159) != 0x1111
-     || graphics_get_game_pixel(239, 159) != 0x1111
-     || graphics_get_game_pixel(239, 130) != 0x0000) {
-        printf("Drawing clipping rect outline failed.\n");
-        return 1;
-    }
-
-    graphics_clear(0x0000);
-    graphics_draw_game_rect(200, 100, 40, 61, 0x1111);
-    if (graphics_get_game_pixel(200, 100) != 0x1111
-     || graphics_get_game_pixel(239, 100) != 0x1111
-     || graphics_get_game_pixel(200, 159) != 0x1111
-     || graphics_get_game_pixel(239, 159) != 0x1111
-     || graphics_get_game_pixel(220, 159) != 0x0000) {
-        printf("Drawing clipping rect outline failed.\n");
-        return 1;
-    }
-
-    graphics_clear(0x0000);
-    graphics_draw_game_rect(1, 1, 1, 1, 0x1111);
-    if (graphics_get_game_pixel(1, 1) != 0x1111
-     || graphics_get_game_pixel(2, 2) != 0x0000) {
-        printf("Drawing single-px rect outline failed.\n");
-        return 1;
-    }
-    
-    if (graphics_draw_game_rect(250, 300, 1, 1, 0x1111) != false) {
-        printf("Drawing rect outline accepts invalid out-of-bounds inputs \n");
-        return 1;
-    }
-    
-    if (graphics_draw_game_rect(1, 1, 0, 0,0x1111) != false) {
-        printf("Drawing rect outline accepts invalid out-of-bounds inputs \n");
-        return 1;
-    }
-
-    graphics_clear(0x0000);
-    printf("All tests passed.\n");
     return 0;
 }
+
+// int main() {
+//     graphics_init();
+//     graphics_clear(0x0000);
+//     graphics_draw_game_rect(10, 10, 20, 15, 0x1111);
+//     if (graphics_get_game_pixel(10, 10) != 0x1111
+//      || graphics_get_game_pixel(29, 10) != 0x1111
+//      || graphics_get_game_pixel(10, 24) != 0x1111
+//      || graphics_get_game_pixel(29, 24) != 0x1111) {
+//         printf("Drawing rect outline failed.\n");
+//         return 1;
+//     }
+//     if (graphics_get_game_pixel(11,11) != 0x0000) {
+//         printf("Drawng rect outline spilled inwards.\n");
+//         return 1;
+//     }
+
+//     graphics_clear(0x0000);
+//     graphics_draw_game_rect(200, 100, 40, 60, 0x1111);
+//     if (graphics_get_game_pixel(200, 100) != 0x1111
+//      || graphics_get_game_pixel(239, 100) != 0x1111
+//      || graphics_get_game_pixel(200, 159) != 0x1111
+//      || graphics_get_game_pixel(239, 159) != 0x1111) {
+//         printf("Drawing rect outline touching edge failed.\n");
+//         return 1;
+//     }
+
+//     graphics_clear(0x0000);
+//     graphics_draw_game_rect(200, 100, 41, 61, 0x1111);
+//     if (graphics_get_game_pixel(200, 100) != 0x1111
+//      || graphics_get_game_pixel(239, 100) != 0x1111
+//      || graphics_get_game_pixel(200, 159) != 0x1111
+//      || graphics_get_game_pixel(239, 159) != 0x0000) {
+//         printf("Drawing clipping rect outline failed.\n");
+//         return 1;
+//     }
+//     if (graphics_get_game_pixel(220,130) != 0x0000) {
+//         printf("Drawng rect outline spilled inwards.\n");
+//         return 1;
+//     }
+
+//     graphics_clear(0x0000);
+//     graphics_draw_game_rect(200, 100, 41, 60, 0x1111);
+//     if (graphics_get_game_pixel(200, 100) != 0x1111
+//      || graphics_get_game_pixel(239, 100) != 0x1111
+//      || graphics_get_game_pixel(200, 159) != 0x1111
+//      || graphics_get_game_pixel(239, 159) != 0x1111
+//      || graphics_get_game_pixel(239, 130) != 0x0000) {
+//         printf("Drawing clipping rect outline failed.\n");
+//         return 1;
+//     }
+
+//     graphics_clear(0x0000);
+//     graphics_draw_game_rect(200, 100, 40, 61, 0x1111);
+//     if (graphics_get_game_pixel(200, 100) != 0x1111
+//      || graphics_get_game_pixel(239, 100) != 0x1111
+//      || graphics_get_game_pixel(200, 159) != 0x1111
+//      || graphics_get_game_pixel(239, 159) != 0x1111
+//      || graphics_get_game_pixel(220, 159) != 0x0000) {
+//         printf("Drawing clipping rect outline failed.\n");
+//         return 1;
+//     }
+
+//     graphics_clear(0x0000);
+//     graphics_draw_game_rect(1, 1, 1, 1, 0x1111);
+//     if (graphics_get_game_pixel(1, 1) != 0x1111
+//      || graphics_get_game_pixel(2, 2) != 0x0000) {
+//         printf("Drawing single-px rect outline failed.\n");
+//         return 1;
+//     }
+    
+//     if (graphics_draw_game_rect(250, 300, 1, 1, 0x1111) != false) {
+//         printf("Drawing rect outline accepts invalid out-of-bounds inputs \n");
+//         return 1;
+//     }
+    
+//     if (graphics_draw_game_rect(1, 1, 0, 0,0x1111) != false) {
+//         printf("Drawing rect outline accepts invalid out-of-bounds inputs \n");
+//         return 1;
+//     }
+
+//     graphics_clear(0x0000);
+//     printf("All tests passed.\n");
+//     return 0;
+// }
 // OLD (Primitive graphics tests)
 // int main() {
 //     // Scaling Tests

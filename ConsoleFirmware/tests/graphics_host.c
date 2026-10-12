@@ -101,20 +101,20 @@ bool graphics_fill_game_rect(uint16_t x, uint16_t y, uint16_t width, uint16_t he
 
 
 bool graphics_draw_game_rect(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint16_t color) {
-    if (x >= 240 || y >= 160 || width == 0 || height == 0) {
+    if (x >= GRAPHICS_WIDTH || y >= GRAPHICS_HEIGHT || width == 0 || height == 0) {
         return false;
     }
     uint32_t x_bound = x + width;
     uint32_t y_bound = y + height;
     bool draw_right = true;
     bool draw_bot = true;
-    if (x_bound > 240) {
+    if (x_bound > GRAPHICS_WIDTH) {
         draw_right = false;
-        x_bound = 240;
+        x_bound = GRAPHICS_WIDTH;
     }
-    if (y_bound > 160) {
+    if (y_bound > GRAPHICS_HEIGHT) {
         draw_bot = false;
-        y_bound = 160;
+        y_bound = GRAPHICS_HEIGHT;
     }
 
     for (uint32_t i = x; i < x_bound; i++) {
@@ -132,6 +132,101 @@ bool graphics_draw_game_rect(uint16_t x, uint16_t y, uint16_t width, uint16_t he
     if (draw_right) {
         for (uint32_t i = y; i < y_bound; i++) {
             graphics_draw_game_pixel(x_bound - 1, i, color);
+        }
+    }
+    return true;
+}
+
+//Bresenham's Circle Alg
+bool graphics_fill_game_circle(uint16_t x, uint16_t y, uint16_t r, uint16_t color) {
+    if (x >= GRAPHICS_WIDTH || y >= GRAPHICS_HEIGHT) {
+        return false;
+    }
+
+    if (r == 0) {
+        graphics_draw_game_pixel(x, y, color);
+        return true;
+    }
+
+    uint16_t x_ind = 0;
+    uint16_t y_ind = r;
+    int P = 1 - r;
+    for (uint16_t y_temp = x_ind; y_temp <= y_ind; y_temp++) {
+        if (x + x_ind < GRAPHICS_WIDTH) {
+            if (y + y_temp < GRAPHICS_HEIGHT) {
+                graphics_draw_game_pixel(x + x_ind, y + y_temp, color);
+            }
+            if (y >= y_temp) {
+                graphics_draw_game_pixel(x + x_ind, y - y_temp, color);
+            }
+        }
+        if (x >= x_ind) {
+            if (y + y_temp < GRAPHICS_HEIGHT) {
+                graphics_draw_game_pixel(x - x_ind, y + y_temp, color);
+            }
+            if (y >= y_temp) {
+                graphics_draw_game_pixel(x - x_ind, y - y_temp, color);
+            }
+        }
+        if (x + y_temp < GRAPHICS_WIDTH) {
+            if (y + x_ind < GRAPHICS_HEIGHT) {
+                graphics_draw_game_pixel(x + y_temp, y + x_ind, color);
+            }
+            if (y >= x_ind) {
+                graphics_draw_game_pixel(x + y_temp, y - x_ind, color);
+            }
+        }
+        if (x >= y_temp) {
+            if (y + x_ind < GRAPHICS_HEIGHT) {
+                graphics_draw_game_pixel(x - y_temp, y + x_ind, color);
+            }
+            if (y >= x_ind) {
+                graphics_draw_game_pixel(x - y_temp, y - x_ind, color);
+            }
+        }
+    }
+    while (y_ind >= x_ind) {
+        x_ind++;
+        if (P <= 0) {
+            P = P + 2 * x_ind + 1;
+        }
+        else {
+            y_ind--;
+            P = P + 2 * x_ind - 2 * y_ind + 1;
+        }
+        for (uint16_t y_temp = x_ind; y_temp <= y_ind; y_temp++) {
+            if (x + x_ind < GRAPHICS_WIDTH) {
+                if (y + y_temp < GRAPHICS_HEIGHT) {
+                    graphics_draw_game_pixel(x + x_ind, y + y_temp, color);
+                }
+                if (y >= y_temp) {
+                    graphics_draw_game_pixel(x + x_ind, y - y_temp, color);
+                }
+            }
+            if (x >= x_ind) {
+                if (y + y_temp < GRAPHICS_HEIGHT) {
+                    graphics_draw_game_pixel(x - x_ind, y + y_temp, color);
+                }
+                if (y >= y_temp) {
+                    graphics_draw_game_pixel(x - x_ind, y - y_temp, color);
+                }
+            }
+            if (x + y_temp < GRAPHICS_WIDTH) {
+                if (y + x_ind < GRAPHICS_HEIGHT) {
+                    graphics_draw_game_pixel(x + y_temp, y + x_ind, color);
+                }
+                if (y >= x_ind) {
+                    graphics_draw_game_pixel(x + y_temp, y - x_ind, color);
+                }
+            }
+            if (x >= y_temp) {
+                if (y + x_ind < GRAPHICS_HEIGHT) {
+                    graphics_draw_game_pixel(x - y_temp, y + x_ind, color);
+                }
+                if (y >= x_ind) {
+                    graphics_draw_game_pixel(x - y_temp, y - x_ind, color);
+                }
+            }
         }
     }
     return true;
